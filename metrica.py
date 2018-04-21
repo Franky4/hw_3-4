@@ -41,5 +41,5 @@ class YaMetrikaUser:
 user1 = YaMetrikaUser(TOKEN)
 print('Список ваших счетчиков: {}'.format(user1.get_counter_list()))
 my_stat = user1.get_counter_stat('45843831')
-print('Визитов {}, Просмотров {}, Посетителей {}'.format(my_stat[0], my_stat[1], my_stat[2]))
+print('Визитов {}, Просмотров {}, Посетителей {}'.format(*my_stat))
 
